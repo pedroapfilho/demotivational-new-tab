@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Browser Extension",
+  "name": "Demotivational New Tab",
   "version": "1.0.0",
-  "description": "Something here",
+  "description": "Get demotivated evey time you open a new tab!",
   "icons": {
     "128": "icons/icon128.png",
     "48": "icons/icon48.png",
@@ -11,21 +11,7 @@
   },
   "browser_action": {
     "default_icon": "icons/icon128.png",
-    "default_title": "Browser Extension",
-    "default_popup": "popup.html"
-  },
-  "background": {
-    "scripts": ["background.js"]
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
-  "options_ui": {
-    "page": "options.html",
-    "open_in_tab": true
+    "default_title": "Browser Extension"
   },
   "chrome_url_overrides": {
     "newtab": "newTab.html"
